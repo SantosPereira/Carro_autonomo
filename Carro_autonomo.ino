@@ -18,8 +18,7 @@ void loop() {
   // Definição das variáveis
   long duracao, cm;
 
-  // The PING))) is triggered by a HIGH pulse of 2 or more microseconds.
-  // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+  // O sensor vai emitir um pulso de 2 ou mais microsegundos.
   pinMode(porta, OUTPUT);
   digitalWrite(porta, LOW);
   delayMicroseconds(2);
