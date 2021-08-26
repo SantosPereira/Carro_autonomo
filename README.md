@@ -12,4 +12,4 @@ Projeto de carrinho autonomo com arduino utilizando o sensor ultrassônico HC-SR
 
 ## Circuito
 
-[Imagem](circuito)
+![Imagem](circuito.png)
