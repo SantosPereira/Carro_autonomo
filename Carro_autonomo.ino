@@ -24,7 +24,7 @@ void loop() {
   char direcao;
   long duracao, cm;
 
-  direcao = 'front';
+  direcao = 'f'; // front
 
   //          Opções
   //'front'
@@ -57,11 +57,11 @@ void loop() {
   // Faz desviar de obstáculos virando sempre a direita
   if (cm < 10)
   {
-    direcao = 'right';
+    direcao = 'r'; // right
   }
 
   // Controle dos motores
-  if (direcao == 'front')
+  if (direcao == 'f')
   {
     pinMode(motor1, OUTPUT);
     digitalWrite(motor1, HIGH);
@@ -75,11 +75,11 @@ void loop() {
     pinMode(motor4, OUTPUT);
     digitalWrite(motor4, HIGH);
   }
-  if (direcao == 'back')
+  if (direcao == 'b') // back
   {
 
   }
-    if (direcao == 'stop')
+    if (direcao == 's') // stop
   {
     pinMode(motor1, OUTPUT);
     digitalWrite(motor1, LOW);
@@ -93,7 +93,7 @@ void loop() {
     pinMode(motor4, OUTPUT);
     digitalWrite(motor4, LOW);
   }
-    if (direcao == 'right')
+    if (direcao == 'r')
   {
     pinMode(motor1, OUTPUT);
     digitalWrite(motor1, HIGH);
@@ -107,7 +107,7 @@ void loop() {
     pinMode(motor4, OUTPUT);
     digitalWrite(motor4, LOW);
   }
-    if (direcao == 'left')
+    if (direcao == 'l') // left
   {
     pinMode(motor1, OUTPUT);
     digitalWrite(motor1, LOW);
